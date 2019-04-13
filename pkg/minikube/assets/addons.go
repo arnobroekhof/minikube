@@ -263,6 +263,14 @@ var Addons = map[string]*Addon{
 			"0640",
 			false),
 	}, false, "registry-creds"),
+	"metallb": NewAddon([]*BinDataAsset{
+		NewBinDataAsset(
+			"deploy/addons/metlalb/metallb.yaml",
+			constants.AddonsPath,
+			"metallb.yaml",
+			"0640",
+			true),
+	}, false, "metallb"),
 	"freshpod": NewAddon([]*BinDataAsset{
 		NewBinDataAsset(
 			"deploy/addons/freshpod/freshpod-rc.yaml",
